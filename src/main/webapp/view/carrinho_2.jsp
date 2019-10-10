@@ -1,7 +1,10 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">s
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Vendas</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -9,7 +12,7 @@
 </body>
 </head>
 <body class="fundo">
-  <form action="../index.html">
+  <form action="home" method="GET">
     <button>Voltar</button>
   </form>
   <div class="menu-venda">
@@ -17,7 +20,7 @@
       <hr>
       <div>
           <input type="search" placeholder="Digite o codigo ou nome do produto">
-          <form action="carrinho_2.html">
+          <form action="caixa_2" method="GET">
             <button>Buscar</button>
           </form>
       </div>
@@ -41,7 +44,7 @@
       </table>
       <div class="final">
           <label for="preco_total">Preço Total: R$ 300,00</label>
-          <form action="carrinho.html">
+          <form action="caixa" method="GET">
             <Button>Finalizar compra</Button>
           </form>
       </div>

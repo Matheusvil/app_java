@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +11,7 @@
     <script src="../js/app.js"></script>
 </head>
 <body class="fundo">
-    <form action="../index.html">
+    <form action="home" method="GET">
         <button>Voltar</button>
     </form>
     <div>
@@ -25,7 +28,7 @@
             <input type="text" placeholder="Digite o preço únitario do produto">
         </div>
         <div>
-            <form action="estoqueItem.html">
+            <form action="estoque_2" method="GET">
                 <button>Cadastrar</button>
             </form>
         </div>
