@@ -62,7 +62,7 @@ public class Estoque extends HttpServlet{
             em.persist(prod3);
             em.getTransaction().commit(); */
 
-            Produto prod1 = new Produto();
+           /* Produto prod1 = new Produto();
             prod1.setId(4L);
             prod1.setName("Nestle");
             prod1.setDescription("HMMMMM Gostoso!");
@@ -73,7 +73,7 @@ public class Estoque extends HttpServlet{
             prod1.setUnit("unid.");
             em.getTransaction().begin();
             em.persist(prod1);
-            em.getTransaction().commit();
+            em.getTransaction().commit(); */
 
             Query query = em.createQuery("SELECT prod FROM produtos prod");
             List<Produto> produtos = query.getResultList();
