@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Produtoc",
+            "request": "launch",
+            "mainClass": "server.app.Produtoc",
+            "projectName": "app_java"
+        }
+    ]
+}

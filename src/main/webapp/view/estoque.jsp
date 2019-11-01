@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page contentType = "text/html" pageEncoding = "UTF-8" %>
+<%@ page import = "java.util.*" %>
+<%@ page import = "server.model.Produto" %>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 </head>
 <body class="fundo">
     <form action="home" method="GET">
-        <button>Voltar</button>
+        <button type="submit">Voltar</button>
     </form>
     <div>
         <div class="title">
@@ -29,9 +29,39 @@
         </div>
         <div>
             <form action="estoque_2" method="GET">
-                <button>Cadastrar</button>
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
+        <form method = "GET">
+            <table class = "striped">
+                <caption>Lista Produtos</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Código do Produto</th>
+                        <th>Quantidade no estoque</th>
+                        <th>Unidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                        List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
+                        for ( Produto prod : produtos ){
+                            out.print("<tr>");
+                            out.print("<td>" + prod.getName() + "</td>");
+                            out.print("<td>" + prod.getDescription() + "</td>");
+                            out.print("<td>" + prod.getCurrency() + " " + String.format("%.2f", prod.getPrice()) + "</td>");
+                            out.print("<td>" + prod.getCode() + "</td>");
+                            out.print("<td>" + prod.getAmount() + "</td>");
+                            out.print("<td>" + prod.getUnit() + "</td>");
+                            out.print("</tr>");
+                        }
+                    %>
+                </tbody>
+            </table>
+        </form>
     </div>
 </body>
 </html>
