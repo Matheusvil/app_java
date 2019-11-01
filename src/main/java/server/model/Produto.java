@@ -4,49 +4,88 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity(name="produto")
+@Entity(name = "produtos")
 public class Produto {
-    @Id   
-    private  int id;
-    @Column(name="nome")
-    private  String nome;
-    @Column(name="unidade")
-    private  String unidade;
-    @Column(name="preco")
-    private  float preco;
-    @Column(name="quantidade")
-    private int qtd;
-    
-    
-    public Produto(){}
-    public String getNome() {
-        return nome;
+    @Id
+    private Long id;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "currency")
+    private String currency;
+    @Column(name = "price")
+    private float price;
+    @Column(name = "code")
+    private String code;
+    @Column(name = "amount")
+    private int amount;
+    @Column(name = "unit")
+    private String unit;
+
+    public Produto() { }
+
+    public Long getId() {
+        return this.id;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public float getPreco() {
-        return preco;
-    }
-    public void setPreco(float preco) {
-        this.preco = preco;
-    }
-    public String getUni() {
-        return unidade;
-    }
-    public void setUni(String unidade) {
-        this.unidade = unidade;
-    }
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
+
+    public void setId(Long id) {
         this.id = id;
     }
-    public int getQtd(int qtd){
-        return qtd;
+
+    public String getName() {
+        return this.name;
     }
-	public void setQtd(int qtd) {
-        this.qtd = qtd;
-	}  
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCurrency() {
+        return this.currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public float getPrice() {
+        return this.price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public String getCode() {
+        return this.code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public int getAmount() {
+        return this.amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public String getUnit() {
+        return this.unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 }
