@@ -27,18 +27,8 @@ and open the template in the editor.
     </servlet>
 
     <servlet>
-        <servlet-name>Caixa2</servlet-name>
-        <servlet-class>server.controller.Caixa2</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>Estoque</servlet-name>
         <servlet-class>server.controller.Estoque</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>Estoque2</servlet-name>
-        <servlet-class>server.controller.Estoque2</servlet-class>
     </servlet>
 
     <servlet>
@@ -46,10 +36,6 @@ and open the template in the editor.
         <servlet-class>server.controller.Relatorio</servlet-class>
     </servlet>
     
-    <servlet>
-        <servlet-name>Relatorio2</servlet-name>
-        <servlet-class>server.controller.Relatorio2</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>App</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -61,18 +47,8 @@ and open the template in the editor.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>Caixa2</servlet-name>
-        <url-pattern>/caixa_2</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>Estoque</servlet-name>
         <url-pattern>/estoque</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>Estoque2</servlet-name>
-        <url-pattern>/estoque_2</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -80,8 +56,4 @@ and open the template in the editor.
         <url-pattern>/relatorio</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>Relatorio2</servlet-name>
-        <url-pattern>/relatorio_2</url-pattern>
-    </servlet-mapping>
 </web-app>

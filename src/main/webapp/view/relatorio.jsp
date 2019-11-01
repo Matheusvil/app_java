@@ -12,7 +12,7 @@
 </head>
 <body class="fundo">
     <form action="home" method="GET">
-        <button>Voltar</button>
+        <button type="submit">Voltar</button>
     </form>
     <div class="title">
         <h1>Relatorios de Vendas</h1>
@@ -27,14 +27,14 @@
                 <th>Mais informações</th> 
             </tr>
             <tr>
-                <td>17/09/2019</td>
-                <td>Caixa 1</td>
-                <td>300,00</td>
-                <td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- <td>
                     <form action="relatorio_2" method="GET">
-                        <button>Mais informações</button>
+                        <button type="submit">Mais informações</button>
                     </form>
-                </td>
+                </td> -->
             </tr>
         </table>
     </div>

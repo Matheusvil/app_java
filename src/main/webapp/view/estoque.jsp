@@ -12,7 +12,7 @@
 </head>
 <body class="fundo">
     <form action="home" method="GET">
-        <button>Voltar</button>
+        <button type="submit">Voltar</button>
     </form>
     <div>
         <div class="title">
@@ -29,8 +29,43 @@
         </div>
         <div>
             <form action="estoque_2" method="GET">
-                <button>Cadastrar</button>
+                <button type="submit">Cadastrar</button>
             </form>
+        </div>
+        <div id = "estoque">
+            <div class = "row">
+                <div class = "col">
+                    <form method = "GET">
+                        <table class = "striped">
+                            <caption>Lista Produtos</caption>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Descrição</th>
+                                    <th>Preço</th>
+                                    <th>Código do Produto</th>
+                                    <th>Quantidade no estoque</th>
+                                    <th>Unidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <%
+                                List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
+                                for ( Produto prod : produtos ){
+                                    out.print("<tr>");
+                                    out.print("<td>" + prod.getId() + "</td>");
+                                    out.print("<td>" + prod.getNome() + "</td>");
+                                    out.print("<td>" + prod.getUni() + "</td>");
+                                    out.print("<td>" + prod.getQtd() + "</td>");
+                                    out.print("<td>" + prod.getPreco() + "</td>");
+                                    out.print("</tr>");
+                                }
+                            %>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>

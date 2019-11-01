@@ -13,7 +13,7 @@
 </head>
 <body class="fundo">
   <form action="home" method="GET">
-    <button>Voltar</button>
+    <button type="submit">Voltar</button>
   </form>
   <div class="menu-venda">
       <h2>Caixa 01</h2>
@@ -21,7 +21,7 @@
       <div>
           <input type="search" placeholder="Digite o codigo ou nome do produto">
           <form action="caixa_2" method="GET">
-            <button>Buscar</button>
+            <button type="submit">Buscar</button>
           </form>
       </div>
       <table class="itens-car">
