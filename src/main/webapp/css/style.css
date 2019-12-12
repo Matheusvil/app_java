@@ -1,0 +1,223 @@
+.tabelaEstoque  {
+  border-collapse: collapse;
+  background-color:  white;
+  width: 100%;
+}
+
+.tabelaEstoque th, td {
+  text-align: right;
+  padding: 10px;
+}
+
+.tabelaEstoque b {
+	font-size: 20px;
+}
+
+.tabelaEstoque tr:nth-child(even) {background-color: #f2f2f2;}
+
+#add_prod{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#add_prod fieldset{
+	border: none;
+}
+#add_prod legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+#add_prod label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+#add_prod input[type="text"],
+#add_prod input[type="number"],
+#add_prod textarea,
+#add_prod select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+#addProd {
+	text-align: top;
+    display: block;
+    background-color: #003366;
+    margin: auto;
+    color: #fff;
+    width: 150px;
+    height: 75px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+#editar {
+	text-align: top;
+    display: block;
+    background-color: #154482;
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+#remover {
+	text-align: top;
+    display: block;
+    background-color: #c0392b;
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+#confirmar {
+	text-align: top;
+    display: block;
+    float: left;
+    display: inline;
+    background-color: #003366;
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+#cancelar {
+	text-align: top;
+    display: block;
+    background-color: #cc0000;
+
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #669999;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: .7;
+}
+
+li a:hover:not(.active) {
+  background-color: #94b8b8;
+  opacity: .9;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+body{
+  margin: 0;
+}
+
+.btn-default{
+  border-radius: 5px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  width: 80px;
+  height: 25px;
+  opacity: .8;
+}
+
+.btn-default:hover:not(.active){
+  opacity: .9;
+}
+
+#idProd, #qntProd{
+  border-radius: 3px;
+  background-color: none;
+  color: #000;
+  border: none;
+  border-bottom: #000 solid 2px;
+}
+
+.rela{
+  opacity: .7;
+}
+
+.rela:hover:not(.active){
+  opacity: .9;
+}
+
+.title.is-2{
+  margin-bottom: 10px;
+}

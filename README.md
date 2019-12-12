@@ -1,5 +1,6 @@
-# app_java
-Projeto referente ao trabalho de laboratório de engenharia de software
+# Projeto-Web-Java
+Projeto de web de Lab de eng de software
 
-Aluno : Matheus Vilela Borrego Ferreira
-5º ADS
+Estoque e controle de fluxo de caixa
+
+Aluno: Matheus Vilela Borrego Ferreira 5 semestre
